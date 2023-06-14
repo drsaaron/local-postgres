@@ -47,6 +47,9 @@ fi
 # is persisted container to container.  For some reason can't simply
 # add --user with mounts, because that doesn't add the user to the
 # passwd DB.
+#
+# see https://www.pgadmin.org/docs/pgadmin4/latest/container_deployment.html#mapped-files-and-directories
+# for possible solution
 docker run -d \
        --name $containerName \
        --network qotd \
